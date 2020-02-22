@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
 
     else if(req.url === '/script.js'){
       res.writeHead(200, {
-        'Content-Type': 'text/javascript',
+        'Content-Type': 'application/javascript',
       });
       res.write(`
         document
